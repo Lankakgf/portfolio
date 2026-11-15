@@ -6,6 +6,7 @@ const EMAIL = "dim77075@gmail.com";
 const LINKS = {
   github: "https://github.com/Lankakgf",
   linkedin: "https://www.linkedin.com/in/devendra-kumar-105961427",
+  leetcode: "https://leetcode.com/u/Lankakgf/",
   instagram: "https://instagram.com/",
 };
 
@@ -76,6 +77,7 @@ export default function App() {
           <a href="#skills">Skills</a>
           <a href="#tech">Tech</a>
           <a href="#projects">Projects</a>
+          <a href="#leetcode">LeetCode</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -170,12 +172,43 @@ export default function App() {
         </p>
       </section>
 
+      <section id="leetcode" className="section">
+        <h2 className="title">🧩 Problem Solving</h2>
+        <div className="grid">
+          <div className="card skill c2" style={{ gridColumn: "1 / -1", maxWidth: 560, margin: "0 auto" }}>
+            <div className="emoji">🏆</div>
+            <h3>LeetCode</h3>
+            <p>I practice DSA regularly on LeetCode: arrays, strings, trees, graphs, DP and more.</p>
+            <div style={{ marginTop: 18 }}>
+              <a
+                className="btn"
+                href={LINKS.leetcode}
+                target="_blank"
+                rel="noreferrer"
+                style={{ background: "#ffa116", color: "#fff" }}
+              >
+                🔗 View LeetCode Profile
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" className="section contact">
         <h2 className="title">📬 Let's Connect</h2>
         <p className="sub">{EMAIL}</p>
         <div className="btns">
           <a className="btn gh" href={LINKS.github} target="_blank" rel="noreferrer">GitHub</a>
           <a className="btn li" href={LINKS.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+          <a
+            className="btn"
+            href={LINKS.leetcode}
+            target="_blank"
+            rel="noreferrer"
+            style={{ background: "#ffa116", color: "#fff" }}
+          >
+            LeetCode
+          </a>
           <a className="btn ig" href={LINKS.instagram} target="_blank" rel="noreferrer">Instagram</a>
         </div>
       </section>
